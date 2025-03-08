@@ -44,7 +44,7 @@
 <body>
 <div class="menu">
     <div class="file" onclick="fun()">File
-        <div class="sfmenu" id="fm" style="display: none;">
+        <div class="sfmenu" id="fm" style="display: none;" onclick="fun1(event)">
             <div>New </div>
             <div>Open</div>
             <div>Save</div>
@@ -69,20 +69,12 @@
     {
         fr.style.display="none"
     }
-
-
-
-     
-
-
-
-
-
-
-
-    
-
+      }
+      let fun1=(e)=>{
+        console.log("msg")
+        e.stopPropagation()
     }
+
 </script>
 </body>
 </html>
